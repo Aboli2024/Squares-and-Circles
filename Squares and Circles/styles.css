@@ -1,0 +1,29 @@
+.outer-square {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #fff;
+}
+
+.inner {
+    margin: 10px;
+    /* Spacing around each inner element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: green;
+}
+
+.circle {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: blue;
+    border-radius: 50%;
+}
